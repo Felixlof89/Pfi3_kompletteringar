@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.felix.assignment_2.MainFragment">
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_Tidtabeller"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/icon_calendar"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/imageButton_sok"
+        android:layout_alignEnd="@+id/imageButton_biljetter" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_hallplatssok"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/icon_clock"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_sok"
+        android:src="@drawable/icon_search"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_biljetter"
+        android:src="@drawable/icon_tickets"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/imageButton_hallplatssok" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sok"
+        android:id="@+id/textView"
+        android:layout_marginStart="37dp"
+        android:layout_below="@+id/imageButton_sok"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tidtabeller"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageButton_Tidtabeller"
+        android:layout_alignEnd="@+id/imageButton_Tidtabeller"
+        android:layout_marginEnd="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hallplatssok"
+        android:id="@+id/textView3"
+        android:textAlignment="center"
+        android:layout_below="@+id/imageButton_hallplatssok"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biljetter"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageButton_biljetter"
+        android:layout_alignEnd="@+id/textView2" />
+
+</RelativeLayout>
