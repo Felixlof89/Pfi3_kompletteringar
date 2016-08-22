@@ -38,7 +38,8 @@ public class Image extends ArrayAdapter<Planets> {
         Log.i("MyListAdapter", "Called for position: " + position);
         Planets p = planetList.get(position);
 
-        convertView = inflater.inflate(R.layout.grid_item,null);
+        convertView = inflater.inflate(R.layout.grid_fragment,null);
+
 
         ImageView iv = (ImageView) convertView.findViewById(R.id.iv_planetpic);
 

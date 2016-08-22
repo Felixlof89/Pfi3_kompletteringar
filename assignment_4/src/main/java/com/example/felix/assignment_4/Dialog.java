@@ -20,7 +20,7 @@ public class Dialog extends DialogFragment implements View.OnClickListener {
 
                 View v = inflater.inflate(R.layout.fragment_dialog, container, false);
         Planets p = (Planets) getArguments().getSerializable("planet");
-        ImageView iv = (ImageView) v.findViewById(R.id.planetsFactImage);
+        ImageView iv = (ImageView) v.findViewById(R.id.planetFactImage);
         iv.setImageDrawable(p.getImage());
 
         TextView descriptionView = (TextView) v.findViewById(R.id.factDescription);
@@ -38,6 +38,6 @@ public class Dialog extends DialogFragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        FragmentDialog.this.dismiss();
+        Dialog.this.dismiss();
     }
 }

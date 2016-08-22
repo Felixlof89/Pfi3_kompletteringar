@@ -57,7 +57,7 @@ public class Grid extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_grid, container, false);
 
-        Image myImageAdapter = new Image(getActivity(),Planets);
+        Image myImageAdapter = new Image(getActivity(),planets);
         GridView gridView = (GridView) view.findViewById(R.id.gridView);
         gridView.setAdapter(myImageAdapter);
 
